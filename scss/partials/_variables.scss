@@ -1,0 +1,112 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+https://robots.thoughtbot.com/controlling-color-with-sass-color-functions
+http://0to255.com/
+*********************/
+/* ALERT:/*/
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+/* Base Color feel free to add some:/*/
+$black:             #323944;
+$white:             #fff;
+$green:             #7dd667;
+$blue:              #2980b9;
+$yellow:            #ebe16f;
+$gray:              #5c6b80;
+
+/* Variation COLOR lighten :/*/
+$light-gray:        lighten( $gray, 10% );
+$light-gray-1:        lighten( $gray, 20% );
+$light-gray-2:        lighten( $gray, 30% );
+
+/* Variation COLOR Transparent :/*/
+$white-trans:        rgba( $white, .8 );
+$white-trans-1:      rgba( $white, .5 );
+$white-trans-2:      rgba( $white, .3 );
+
+
+$bg-main-color:       $white;
+$header-bg-color:    $white;
+$main:                $gray;
+$main-1:              $black;
+$main-2:              $green;
+$text-color:          $black;
+$text-color-1:        $gray;
+
+
+
+/* Link COLOR :/*/
+
+$link-color:        $green;
+$link-hover:        darken($link-color, 9%);
+
+
+
+/* button  COLOR :/*/
+$button-txt-color:   $white;
+$button-txt-color-hover: $white;
+$button-txt-color-1: $white;
+$button-txt-color-hover-1: $white;
+$button-bg-color:  $main;
+$button-bg-color-over:  $light-gray-2;
+
+/* border COLOR :/*/
+$border-color:      $light-gray;
+$disabled-gray:     $light-gray-2;
+$meta-gray:         $light-gray-1;
+
+/* Menu full screen COLOR :/*/
+$burger-color:     $green;
+$overlay-color:     $green;
+$overlay-color-trans: rgba( $gray, .9 );
+$overlay-link-color: $gray;
+$overlay-link-hover: $white;
+
+
+
+/* tooltip COLOR :/*/
+$tooltip-bg:      $light-gray;
+$tooltip-txt:     $light-gray-2;
+$tooltip-border:  $tooltip-bg;
+
+
+
+
+
+/* MENU RESPONSIVE OPTIONS:/*/
+// Fonts
+$sidr-font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+$sidr-font-size: 15px;
+
+// Colors
+$sidr-background: $main;
+$sidr-background-shadow-color: $main;
+$sidr-text-color: $text-color;
+$sidr-box-shadow-color: $main;
+$sidr-input-background-color: $main;
+
+// Width
+$sidebar-width: 260px;
+$sidebar-width-neg: -260px;
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/

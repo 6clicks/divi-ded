@@ -1,0 +1,2 @@
+John
+cd Documents/6clicks/clients/OneSolution/_web/Blog/wp-content/themes/divi-ded

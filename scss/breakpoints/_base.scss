@@ -1,0 +1,69 @@
+/******************************************************************
+Site Name: DIVI-DED
+Author: john Robert-Nicoud | 6clicks
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	
+}
+#hoverflow {
+    overflow-x: hidden;
+}
+
+/*********************
+srites svg  démo  et import  ....
+*********************/
+@import 'modules/sprite';
+
+$ieSprite: '.lt-ie9' !default;
+$sprite: map-get($icons, sprite) !default;
+$baseFontSize: 16px !default;
+
+@import 'modules/svgspritemix';
+
+/* exemple de svg as backgrund
+.page-title {
+	&:before {
+		@include sprite(twitter);
+		content: '';
+		float: left;
+		margin-right: 0.5em;
+		font-size:25px;
+		position: fixed;
+		transition: filter ease 1s,-webkit-filter ease 1s;
+	}
+
+	&:hover {
+		&:before {
+			@include sprite(twitterHover, bg);
+			filter: hue-rotate(0deg) saturate(0%) brightness(500%);
+		}
+	}
+}
+*/
+
+/*********************
+LAYOUT 
+*********************/
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
